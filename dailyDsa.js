@@ -82,15 +82,30 @@
 // a /= 1.609;
 // console.log(`The conversion of the given value of Km in miles is ${a}` );
 
-// (7.)Program to find the square root of a number
+// (7.) Program to find the square root of a number
 // let prompt = require('prompt-sync')()
 // let num = parseInt(prompt('Enter the number for finding square root : '));
 // result = Math.sqrt(num);
 // console.log(`The square root of input value is ${result}`);
 
-// Program to convert Celsius to Fahrenheit {(F° = (C° * 9/5) + 32)}
+// (8.) Program to convert Celsius to Fahrenheit {(F° = (C° * 9/5) + 32)}
 // let prompt = require('prompt-sync')()
 // let Celsius = parseInt(prompt('Enter the Celsius degree temperature : '));
 // Celsius *= 1.8;
 // Celsius += 32;
 // console.log(`The given celsius converted to Fahrenheit is ${Celsius}`);
+
+// (9.) Program to check if a number is  +ve, -ve, or 0
+function num(a) {
+    if (a >= 1) {
+        return "Number is Positive";
+    }
+    else if (a <= -1) {
+        return 'Number is Negative';
+        
+    }
+    else {
+        return 'Zero';
+    }
+}
+console.log(num(0));

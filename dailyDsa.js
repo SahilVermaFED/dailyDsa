@@ -81,3 +81,9 @@
 // let a = parseInt(input('Enter the Km in number to change in miles : '));
 // a /= 1.609;
 // console.log(`The conversion of the given value of Km in miles is ${a}` );
+
+// (7.)Program to find the sqyuare root of a number
+// let prompt = require('prompt-sync')()
+// let num = parseInt(prompt('Enter the number for finding square root : '));
+// result = Math.sqrt(num);
+// console.log(`The square root of input value is ${result}`);

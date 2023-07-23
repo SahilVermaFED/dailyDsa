@@ -50,7 +50,7 @@
 // console.log(`The swapped value of a using destructuring assignment : ${c}`);
 // console.log(`The Swapped value of a using destructuring assignment : ${d}`);    
 
-// Program to find the largest number among three numbers
+// (5.) Program to find the largest number among three numbers
 // function num(a,b,c) {
 //     if (a > b && a > c) {
 //         return `The largest number is ${a}`
@@ -74,4 +74,10 @@
 //         return "All the Values are same"
 //     }
 // }
-console.log(num(6,7,6));
+// console.log(num(6,7,6));
+
+// (6.) Program to Convert Kilometers to Miles
+// let input = require('prompt-sync')()
+// let a = parseInt(input('Enter the Km in number to change in miles : '));
+// a /= 1.609;
+// console.log(`The conversion of the given value of Km in miles is ${a}` );

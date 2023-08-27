@@ -136,3 +136,15 @@
 // const parameter = (side1 + side2 + side3)/2;
 // const areaOfTrikon = Math.sqrt(parameter * (parameter - side1)*(parameter - side2)*(parameter - side3) );
 // console.log(`The area of the traingle is ${areaOfTrikon}`);
+
+// Program to generate multiplication table
+// let input = require('prompt-sync')();
+// var number = parseInt(input(`Enter a number for which a multiplication table makes: `));
+// var range = parseInt(input(`Enter a range: `));
+// for (i = 1; i <= range; i++) {
+//     var result = i * number;
+//     console.log(number + " * " + i + " = " + result)
+// } 
+
+// 
+                                           

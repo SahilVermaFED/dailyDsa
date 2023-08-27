@@ -31,6 +31,7 @@
 // const result = Math.sqrt(number);
 // console.log(`The square root of ${number} is ${result}`);
 
+
 // (4.) Program to swap two numbers using Arthmetic Operators
 // let input = require('prompt-sync')()
 // let a = parseInt(input('Enter the first number before swapping : '));
@@ -49,6 +50,7 @@
 // [c, d] = [d, c]
 // console.log(`The swapped value of a using destructuring assignment : ${c}`);
 // console.log(`The Swapped value of a using destructuring assignment : ${d}`);    
+
 
 // (5.) Program to find the largest number among three numbers
 // function num(a,b,c) {
@@ -76,11 +78,13 @@
 // }
 // console.log(num(6,7,6));
 
+
 // (6.) Program to Convert Kilometers to Miles
 // let input = require('prompt-sync')()
 // let a = parseInt(input('Enter the Km in number to change in miles : '));
 // a /= 1.609;
 // console.log(`The conversion of the given value of Km in miles is ${a}` );
+
 
 // (7.) Program to find the square root of a number
 // let prompt = require('prompt-sync')()
@@ -88,12 +92,14 @@
 // result = Math.sqrt(num);
 // console.log(`The square root of input value is ${result}`);
 
+
 // (8.) Program to convert Celsius to Fahrenheit {(F° = (C° * 9/5) + 32)}
 // let prompt = require('prompt-sync')()
 // let Celsius = parseInt(prompt('Enter the Celsius degree temperature : '));
 // Celsius *= 1.8;
 // Celsius += 32;
 // console.log(`The given celsius converted to Fahrenheit is ${Celsius}`);
+
 
 // (9.) Program to check if a number is  +ve, -ve, or 0
 // function num(a) {
@@ -108,4 +114,25 @@
 //         return 'Zero';
 //     }
 // }
-// console.log(num(0));
+// console.log(num(+2));
+
+
+// (10.) Program to check Prime Number
+// ##################################################################################
+
+
+// (11.) Program to Calculate the Area of a Triangle with base and height
+// let prompt = require('prompt-sync')()
+// let height = parseInt(prompt('Enter the Height of Triangle: '));
+// let base = parseInt(prompt('Enter the base of Triangle: '));
+// AreaOfTriangle = (height * base)/2;
+// console.log(`The area of Traingle is ${AreaOfTriangle}`);
+
+// (11.) Program to Calculate the Area of a Triangle with sides
+// let input = require('prompt-sync')()
+// const side1 = parseInt(input('Enter the first side length: '));
+// const side2 =parseInt(input('Enter the second side length: '));
+// const side3 = parseInt(input('Enter the third side length: '));
+// const parameter = (side1 + side2 + side3)/2;
+// const areaOfTrikon = Math.sqrt(parameter * (parameter - side1)*(parameter - side2)*(parameter - side3) );
+// console.log(`The area of the traingle is ${areaOfTrikon}`);

@@ -108,7 +108,7 @@
 //     }
 //     else if (a <= -1) {
 //         return 'Number is Negative';
-        
+
 //     }
 //     else {
 //         return 'Zero';
@@ -137,7 +137,7 @@
 // const areaOfTrikon = Math.sqrt(parameter * (parameter - side1)*(parameter - side2)*(parameter - side3) );
 // console.log(`The area of the traingle is ${areaOfTrikon}`);
 
-// Program to generate multiplication table
+// (12.) Program to generate multiplication table
 // let input = require('prompt-sync')();
 // var number = parseInt(input(`Enter a number for which a multiplication table makes: `));
 // var range = parseInt(input(`Enter a range: `));
@@ -146,5 +146,38 @@
 //     console.log(number + " * " + i + " = " + result)
 // } 
 
+
 // 
-                                           
+
+// 
+
+// 
+
+
+
+// 
+
+// 
+
+// (45.) Program to Loop through an Object using ((for...in loop))
+const student = {
+    name: "Dev",
+    age: 24,
+    hobbies: ["Coding", " Cards", " travelling"],
+};
+
+for (let key in student) {
+    let value = student[key];
+    console.log(key + " - " + value);
+}
+
+// (45.) Program to Loop through an Object using Object.entries and for...of
+const student2 = {
+    name: "chiku",
+    age: "12",
+    hobbies : ["Singing"," English-Movies"],
+}
+
+for (let[key,value] of Object.entries(student2)) {
+    console.log(key + " - " + value);
+}

@@ -16,6 +16,7 @@
 // const result = (num%2 ==0) ? "even" : "odd";
 // console.log(`The number is ${result}.`);
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (2.) Program to Add Two Numbers
 // let input = require('prompt-sync')()
@@ -24,6 +25,7 @@
 // const Result = (num1 + num2);
 // console.log(`Addition of Two numbers is ${Result}`);
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (3.) Program to Find the square root of given number
 // let prompt = require('prompt-sync')()
@@ -31,6 +33,7 @@
 // const result = Math.sqrt(number);
 // console.log(`The square root of ${number} is ${result}`);
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (4.) Program to swap two numbers using Arthmetic Operators
 // let input = require('prompt-sync')()
@@ -49,8 +52,9 @@
 // let d = parseInt(prompt('Enter the second number before swapping : '));
 // [c, d] = [d, c]
 // console.log(`The swapped value of a using destructuring assignment : ${c}`);
-// console.log(`The Swapped value of a using destructuring assignment : ${d}`);    
+// console.log(`The Swapped value of a using destructuring assignment : ${d}`);
 
+// ------------------------------------------------------------------------
 
 // (5.) Program to find the largest number among three numbers
 // function num(a,b,c) {
@@ -78,6 +82,7 @@
 // }
 // console.log(num(6,7,6));
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (6.) Program to Convert Kilometers to Miles
 // let input = require('prompt-sync')()
@@ -85,6 +90,7 @@
 // a /= 1.609;
 // console.log(`The conversion of the given value of Km in miles is ${a}` );
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (7.) Program to find the square root of a number
 // let prompt = require('prompt-sync')()
@@ -92,6 +98,7 @@
 // result = Math.sqrt(num);
 // console.log(`The square root of input value is ${result}`);
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (8.) Program to convert Celsius to Fahrenheit {(F° = (C° * 9/5) + 32)}
 // let prompt = require('prompt-sync')()
@@ -100,6 +107,7 @@
 // Celsius += 32;
 // console.log(`The given celsius converted to Fahrenheit is ${Celsius}`);
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (9.) Program to check if a number is  +ve, -ve, or 0
 // function num(a) {
@@ -116,10 +124,12 @@
 // }
 // console.log(num(+2));
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (10.) Program to check Prime Number
 // ##################################################################################
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (11.) Program to Calculate the Area of a Triangle with base and height
 // let prompt = require('prompt-sync')()
@@ -137,6 +147,8 @@
 // const areaOfTrikon = Math.sqrt(parameter * (parameter - side1)*(parameter - side2)*(parameter - side3) );
 // console.log(`The area of the traingle is ${areaOfTrikon}`);
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+
 // (12.) Program to generate multiplication table
 // let input = require('prompt-sync')();
 // var number = parseInt(input(`Enter a number for which a multiplication table makes: `));
@@ -144,40 +156,110 @@
 // for (i = 1; i <= range; i++) {
 //     var result = i * number;
 //     console.log(number + " * " + i + " = " + result)
-// } 
+// }
 
 
-// 
+//
 
-// 
+//
 
-// 
+//
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
+// (43.) Program to check if a key exists in an Object or not using (in Operator)
+// const person = {
+//     id: 1,
+//     name: "Don",
+//     age: 23,
+// }
 
-// 
+// const hasKey = "id" in person;
 
-// 
+// if (hasKey) {
+//     console.log('The key Exists.')
+// }
+// else {
+//     console.log("The key Doesn't Exists.")
+// }
+
+// (43.) Program to check if a key exists in an Object or not using (in Operator)
+// const person2 = {
+//     id: 2,
+//     name: "Don",
+//     age: 25,
+// }
+
+// const hasKey2 = "age" in person;
+
+// (hasKey2) ? console.log("The key exists.")
+//           : console.log("The key doesnt exists")
+
+// (43.) Program to check if a key exists in an objet using hasOwnProperty() method
+// const person3 = {
+//     id: 3,
+//     name: "shakira",
+//     age: "50",
+// }
+
+// const hasKey3 = person3.hasOwnProperty("name");
+
+// (hasKey3) ? console.log("The key exists.")
+//     : console.log("The key doesnt exists")
+
+// (43.) Program to check if a key exists in an objet using hasOwnProperty() method
+// const person4 = {
+//     id: 3,
+//     name: "shaakya",
+//     age: "22",
+// }
+
+// const hasKey4 = person3.hasOwnProperty("name");
+
+// if(hasKey4) {
+//     console.log("Yes, Exists..")
+// } else {
+//     console.log("No,Not exists..")
+// }
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+
+// (44.) Program to clone a JS Object ((Using spread <...>))
+// const food = { paneer: "@", milk: "cow" };
+// const cloneFood = { ...food };
+// console.log(cloneFood);
+
+// (44.) Program to clone a JS Object Using Object.assign({}, food)
+// const food1 = { onion_rings: "@", milk: "boffalo" };
+// const cloneFood1 = Object.assign({}, food1);
+// console.log(cloneFood1);
+
+// (44.) Program to clone a JS Object using JSON.parse(JSON.stringify(food))
+// const food2 = { cheeze: "milk", peas: "plant" }
+// const cloneFood2 = JSON.parse(JSON.stringify(food2));
+// console.log(cloneFood2);
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (45.) Program to Loop through an Object using ((for...in loop))
-const student = {
-    name: "Dev",
-    age: 24,
-    hobbies: ["Coding", " Cards", " travelling"],
-};
+// const student = {
+//     name: "Dev",
+//     age: 24,
+//     hobbies: ["Coding", " Cards", " travelling"],
+// };
 
-for (let key in student) {
-    let value = student[key];
-    console.log(key + " - " + value);
-}
+// for (let key in student) {
+//     let value = student[key];
+//     console.log(key + " - " + value);
+// }
 
 // (45.) Program to Loop through an Object using Object.entries and for...of
-const student2 = {
-    name: "chiku",
-    age: "12",
-    hobbies : ["Singing"," English-Movies"],
-}
+// const student2 = {
+//     name: "chiku",
+//     age: "12",
+//     hobbies : ["Singing"," English-Movies"],
+// }
 
-for (let[key,value] of Object.entries(student2)) {
-    console.log(key + " - " + value);
-}
+// for (let[key,value] of Object.entries(student2)) {
+//     console.log(key + " - " + value);
+// }

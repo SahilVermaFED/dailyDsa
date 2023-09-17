@@ -11,8 +11,6 @@ const student = {
         science: 80
     }
 };
-
-// deleting a property from an object
 delete student.greet;
 delete student['score'];
 

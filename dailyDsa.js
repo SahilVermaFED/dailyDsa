@@ -163,7 +163,45 @@
 
 //
 
-//
+// (42.) Check Whether a String Starts and Ends With Certain Characters Using ((Built-in Methods))
+// let prompt = require('prompt-sync')();
+// let string = prompt('Enter a String: ');
+// function checkString(str) {
+//     if(str.startsWith('T') && str.endsWith('G')) {
+//         console.log('The string starts with T and ends with G');
+//     }
+//     else if(str.startsWith('T')) {
+//         console.log('The string starts with T but does not end with G');
+//     }
+//      else if(str.endsWith('G')) {
+//         console.log('The string starts does not with T but end with G');
+//     }
+//     else {
+//         console.log('The string does not start with T and does not end with G');
+//     }
+// }
+// checkString(string);
+
+// (42.) Program to Check The String Using Regex.. 
+function checkString(str) {
+    if( /^T/i.test(str) && /U$/i.test(str)) {
+        console.log('The string starts with T and ends with U');
+    }
+    else if(/^T/i.test(str)) {
+        console.log('The string starts with T but does not ends with U');
+    }
+     else if(/U$/i.test(str)) {
+        console.log('The string starts does not with T but ends with U');
+    }
+    else {
+        console.log('The string does not start with T and does not end with U');
+    }
+}
+for (let i = 0;i < 3; i++) {
+    const input = require('prompt-sync')();
+    const string2 = input('Enter a string: ') 
+    checkString(string2);
+}
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 

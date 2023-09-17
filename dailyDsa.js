@@ -159,9 +159,25 @@
 // }
 
 
-//
+// (41.) Program to remove a Property from an Object using delete function
+const student = {
+    name: 'John',
+    age: 20,
+    hobbies: ['reading', 'games', 'coding'],
+    greet: function () {
+        console.log('Hello everyone.');
+    },
+    score: {
+        maths: 90,
+        science: 80
+    }
+};
 
-//
+delete student.greet;  // .key method used for deletion
+delete student['hobbies'];  // ['key'] method is used 
+console.log(student);
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (42.) Check Whether a String Starts and Ends With Certain Characters Using ((Built-in Methods))
 // let prompt = require('prompt-sync')();
@@ -182,26 +198,26 @@
 // }
 // checkString(string);
 
-// (42.) Program to Check The String Using Regex.. 
-function checkString(str) {
-    if( /^T/i.test(str) && /U$/i.test(str)) {
-        console.log('The string starts with T and ends with U');
-    }
-    else if(/^T/i.test(str)) {
-        console.log('The string starts with T but does not ends with U');
-    }
-     else if(/U$/i.test(str)) {
-        console.log('The string starts does not with T but ends with U');
-    }
-    else {
-        console.log('The string does not start with T and does not end with U');
-    }
-}
-for (let i = 0;i < 3; i++) {
-    const input = require('prompt-sync')();
-    const string2 = input('Enter a string: ') 
-    checkString(string2);
-}
+// (42.) Program to Check The String Using Regex..
+// function checkString(str) {
+//     if( /^T/i.test(str) && /U$/i.test(str)) {
+//         console.log('The string starts with T and ends with U');
+//     }
+//     else if(/^T/i.test(str)) {
+//         console.log('The string starts with T but does not ends with U');
+//     }
+//      else if(/U$/i.test(str)) {
+//         console.log('The string starts does not with T but ends with U');
+//     }
+//     else {
+//         console.log('The string does not start with T and does not end with U');
+//     }
+// }
+// for (let i = 0;i < 3; i++) {
+//     const input = require('prompt-sync')();
+//     const string2 = input('Enter a string: ')
+//     checkString(string2);
+// }
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -127,7 +127,18 @@
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (10.) Program to check Prime Number
-// ##################################################################################
+// function checkPrime(num, div = 2) {
+//     if (num <= 2) {
+//         return (num == 2) ? true : false;
+//     } else if (div * div > num) {
+//         return true;
+//     } else if (num % div == 0) {
+//         return false;
+//     } else {
+//         return checkPrime(num, div + 1);
+//     }
+// }
+// console.log(checkPrime(23));
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -158,50 +169,60 @@
 //     console.log(number + " * " + i + " = " + result)
 // }
 
+//(33.) Program to check Whether the string is palidrome or not
+function checkPalidrome(str) {
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) != str.charAt(str.length - i - 1)) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(checkPalidrome("rhghr"));
 
 
 // (40.) [i]. Program to create JavaScript object using instance of an object / using new keyword
-const person = new Object({
-    name: 'John',
-    age: 20,
-    hobbies: ['reading', 'games', 'coding'],
-    greet: function () {
-        console.log('Hello everyone.');
-    },
-    score: {
-        maths: 90,
-        science: 80
-    }
-});
+// const person = new Object({
+//     name: 'John',
+//     age: 20,
+//     hobbies: ['reading', 'games', 'coding'],
+//     greet: function () {
+//         console.log('Hello everyone.');
+//     },
+//     score: {
+//         maths: 90,
+//         science: 80
+//     }
+// });
 
-console.log(person); // full string
-console.log(typeof person);
-console.log(person.name);
-console.log(person.hobbies[0]);
-person.greet();
-console.log(person.score.maths);
+// console.log(person); // full string
+// console.log(typeof person);
+// console.log(person.name);
+// console.log(person.hobbies[0]);
+// person.greet();
+// console.log(person.score.maths);
 
 // (40.) [ii]. Program to create JavaScript object
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // (41.) Program to remove a Property from an Object using delete function
-const student = {
-    name: 'John',
-    age: 20,
-    hobbies: ['reading', 'games', 'coding'],
-    greet: function () {
-        console.log('Hello everyone.');
-    },
-    score: {
-        maths: 90,
-        science: 80
-    }
-};
+// const student = {
+//     name: 'John',
+//     age: 20,
+//     hobbies: ['reading', 'games', 'coding'],
+//     greet: function () {
+//         console.log('Hello everyone.');
+//     },
+//     score: {
+//         maths: 90,
+//         science: 80
+//     }
+// };
 
-delete student.greet;  // .key method used for deletion
-delete student['hobbies'];  // ['key'] method is used 
-console.log(student);
+// delete student.greet;  // .key method used for deletion
+// delete student['hobbies'];  // ['key'] method is used
+// console.log(student);
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 
